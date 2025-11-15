@@ -1,0 +1,47 @@
+const products = [
+  {id: 1, name: "Ferrari 488 GTB", price: "$207,000", horsepower: "661 hp", topSpeed: "330 km/h", acceleration: "0-100 km/h in 3.0s", engine: "3.9L Twin-Turbo V8", transmission: "7-speed dual-clutch automatic", description: "A stunning Italian supercar combining extreme performance with elegant design.", image: "images/Ferrari 488 GTB.jpg"},
+  {id: 2, name: "Lamborghini Huracán EVO", price: "$221,400", horsepower: "631 hp", topSpeed: "325 km/h", acceleration: "0-100 km/h in 2.9s", engine: "5.2L Naturally Aspirated V10", transmission: "7-speed dual-clutch automatic", description: "A bold and aggressive machine with cutting-edge aerodynamics and a roaring V10 engine.", image: "images/Lamborghini Huracán EVO.jpg"},
+  {id: 3, name: "Porsche 911 Turbo S", price: "$193,000", horsepower: "641 hp", topSpeed: "330 km/h", acceleration: "0-100 km/h in 2.7s", engine: "3.8L Twin-Turbo Flat-6", transmission: "8-speed PDK automatic", description: "Combines German engineering excellence with everyday usability and blistering performance.", image: "images/Porsche 911 Turbo S.jpg"},
+  {id: 4, name: "McLaren 720S", price: "$232,000", horsepower: "710 hp", topSpeed: "341 km/h", acceleration: "0-100 km/h in 2.8s", engine: "4.0L Twin-Turbo V8", transmission: "7-speed dual-clutch automatic", description: "A lightweight, aerodynamically advanced supercar delivering breathtaking performance.", image: "images/McLaren 720S.jpg"},
+  {id: 5, name: "Chevrolet Corvette C8", price: "$100,000", horsepower: "495 hp", topSpeed: "312 km/h", acceleration: "0-100 km/h in 2.9s", engine: "6.2L Naturally Aspirated V8", transmission: "8-speed dual-clutch automatic", description: "An American mid-engine supercar offering exotic looks and incredible value.", image: "images/Chevrolet Corvette C8.jpg"},
+  {id: 6, name: "Nissan GT-R", price: "$125,000", horsepower: "565 hp", topSpeed: "315 km/h", acceleration: "0-100 km/h in 2.9s", engine: "3.8L Twin-Turbo V6", transmission: "6-speed dual-clutch automatic", description: "Legendary ‘Godzilla’ blending raw power and high-tech all-wheel drive.", image: "images/Nissan GT-R.jpg"},
+  {id: 7, name: "Aston Martin Vantage", price: "$168,000", horsepower: "503 hp", topSpeed: "314 km/h", acceleration: "0-100 km/h in 3.6s", engine: "4.0L Twin-Turbo V8", transmission: "8-speed automatic", description: "Elegant British sports car balancing luxury, style, and performance.", image: "images/Aston Martin Vantage.jpg"},
+  {id: 8, name: "BMW M4 Competition", price: "$107,000", horsepower: "503 hp", topSpeed: "290 km/h", acceleration: "0-100 km/h in 3.8s", engine: "3.0L Twin-Turbo Inline-6", transmission: "8-speed automatic", description: "Delivers German precision, sporty luxury, and explosive acceleration.", image: "images/BMW M4 Competition.jpg"},
+  {id: 9, name: "Audi R8 V10 Plus", price: "$150,000", horsepower: "610 hp", topSpeed: "330 km/h", acceleration: "0-100 km/h in 3.2s", engine: "5.2L Naturally Aspirated V10", transmission: "7-speed dual-clutch automatic", description: "A thrilling blend of performance, luxury, and everyday usability.", image: "images/Audi R8 V10 Plus.jpg"},
+  {id: 10, name: "Mercedes-AMG GT R", price: "$164,000", horsepower: "577 hp", topSpeed: "318 km/h", acceleration: "0-100 km/h in 3.5s", engine: "4.0L Twin-Turbo V8", transmission: "7-speed dual-clutch automatic", description: "Track-bred supercar offering a perfect mix of luxury and aggression.", image: "images/Mercedes-AMG GT R.jpg"},
+  {id: 11, name: "Ford Mustang Shelby GT500", price: "$100,000", horsepower: "760 hp", topSpeed: "315 km/h", acceleration: "0-100 km/h in 3.5s", engine: "5.2L Supercharged V8", transmission: "7-speed dual-clutch automatic", description: "American muscle reborn with unmatched power and modern tech.", image: "images/Ford Mustang Shelby GT500.jpg"},
+  {id: 12, name: "Jaguar F-Type R", price: "$132,000", horsepower: "575 hp", topSpeed: "322 km/h", acceleration: "0-100 km/h in 3.5s", engine: "5.0L Supercharged V8", transmission: "8-speed automatic", description: "Stylish British sports car offering thrilling performance and luxury.", image: "images/Jaguar F-Type R.jpg"},
+  {id: 13, name: "Lotus Emira", price: "$118,000", horsepower: "400 hp", topSpeed: "290 km/h", acceleration: "0-100 km/h in 4.3s", engine: "3.5L Supercharged V6", transmission: "6-speed manual", description: "Lightweight and agile sports car emphasizing pure driving pleasure.", image: "images/Lotus Emira.jpg"},
+  {id: 14, name: "Maserati MC20", price: "$214,000", horsepower: "621 hp", topSpeed: "325 km/h", acceleration: "0-100 km/h in 2.9s", engine: "3.0L Twin-Turbo V6", transmission: "8-speed dual-clutch automatic", description: "Italian masterpiece blending luxury and race-inspired performance.", image: "images/Maserati MC20.jpg"},
+  {id: 15, name: "Tesla Roadster", price: "$171,000", horsepower: "1000+ hp (est)", topSpeed: "400+ km/h", acceleration: "0-100 km/h in 1.9s", engine: "Electric Tri-Motor AWD", transmission: "Single-speed automatic", description: "The next-generation all-electric supercar redefining performance and speed.", image: "images/Tesla Roadster.jpg"},
+  {id: 16, name: "Toyota Supra MK4", price: "$54,000", horsepower: "276 hp (stock)", topSpeed: "250 km/h (limited)", acceleration: "0-100 km/h in 4.9s", engine: "3.0L Twin-Turbo Inline-6 (2JZ-GTE)", transmission: "6-speed manual / 4-speed automatic", description: "The legendary Toyota Supra MK4 is a 1990s icon known for its bulletproof 2JZ engine, tunability, and timeless design — a favorite among car enthusiasts and tuners worldwide.", image: "images/Toyota Supra MK4.jpg"},
+  {id: 17, name: "Nissan Skyline GT-R R34", price: "$64,000", horsepower: "276 hp (stock)", topSpeed: "250 km/h (limited)", acceleration: "0-100 km/h in 4.9s", engine: "2.6L Twin-Turbo Inline-6 (RB26DETT)", transmission: "6-speed manual", description: "The legendary Nissan Skyline GT-R R34, nicknamed ‘Godzilla,’ is a Japanese performance icon famous for its precision handling, tunability, and dominance in motorsports.", image: "images/Nissan Skyline GT-R R34.jpg"},
+  {id: 18, name: "Mazda RX-7 (FD3S)", price: "$32,000", horsepower: "276 hp (stock)", topSpeed: "250 km/h", acceleration: "0-100 km/h in 5.3s", engine: "1.3L Twin-Rotor Turbocharged Wankel Rotary", transmission: "5-speed manual / 4-speed automatic", description: "A Japanese legend loved for its lightweight chassis, rotary engine, and perfect 50/50 balance — the RX-7 is a true driver’s car with timeless appeal.", image: "images/Mazda RX-7 (FD3S).jpg"},
+  {id: 19, name: "McLaren P1", price: "$1,200,000", horsepower: "903 hp (combined)", topSpeed: "350 km/h", acceleration: "0-100 km/h in 2.8s", engine: "3.8L Twin-Turbo V8 Hybrid", transmission: "7-speed dual-clutch automatic", description: "A hypercar masterpiece combining hybrid technology and insane performance — the McLaren P1 pushes the limits of what a road car can do.", image: "images/McLaren P1.jpg"},
+{id: 20, name: "Koenigsegg Agera RS", price: "$2,500,000", horsepower: "1,160 hp", topSpeed: "447 km/h (record)", acceleration: "0-100 km/h in 2.8s", engine: "5.0L Twin-Turbo V8", transmission: "7-speed dual-clutch automatic", description: "The Koenigsegg Agera RS is a record-breaking Swedish hypercar that blends extreme performance, lightweight carbon-fiber engineering, and advanced aerodynamics — one of the fastest production cars ever built.", image: "images/Koenigsegg Agera RS.jpg"}
+
+];
+
+    
+    const container1=document.getElementById('products');
+
+    products.forEach(p=>{
+
+      const cards=document.createElement('div');
+      
+      cards.className='card';
+
+      cards.innerHTML=`
+      <img src="${p.image}" alt="${p.name}" />
+      <h3> ${p.name}</h3>
+      <p>Price: ${p.price}</p>
+      <a href='card-detail.html?id=${p.id}'> View Details</a>
+      `;
+
+
+      container1.appendChild(cards);
+
+
+    })
+
+

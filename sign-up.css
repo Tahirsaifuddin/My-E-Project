@@ -1,0 +1,100 @@
+    body {
+      background-image: url('photo-1492144534655-ae79c964c9d7.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+    
+    
+    
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* keeps video behind other content */
+}
+
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px); 
+      padding: 30px;
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      height: 450px;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+    
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+    
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(green,lightgreen);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+
+    button:hover {
+        background: linear-gradient(lightgreen,green);
+    }
+    p{
+      text-align: center;
+      margin-top: 10px;
+    }
+    p>a{
+      text-decoration: none;
+      color: aqua;
+    }
+    footer {
+      height: 50px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+        gap: 70px;
+    }
+    footer>a{
+      text-decoration: none;
+      color: #fff;
+      font-style: italic;
+    }
